@@ -1,0 +1,108 @@
+body {
+    background-color: #4B4F4F;
+}
+.navbar-dark {
+    background-image: linear-gradient(to bottom right, red, darkorange);
+}
+.navbar-brand {
+    color: floralwhite;
+    font-weight: bold;
+    opacity: 0.8;
+    font-size: 25px;
+}
+.navbar-brand:hover {
+    opacity: 1;
+}
+.nav-link {
+    font-size: 20px;
+}
+.nav-link:hover {
+    color: floralwhite !important;
+}
+.dropdown-menu {
+    background-image: linear-gradient(to bottom right, red, darkorange);
+}
+.dropdown-item, .dropdown-divider {
+    color: floralwhite;
+}
+.dropdown-item:hover {
+    background-color: floralwhite;
+    opacity: 1;
+    font-weight: bold;
+}
+.introCard {
+    background-image: linear-gradient(to bottom right, #3E0862, #0BD0A9);
+    color: #E0FFFF;
+    box-shadow: 0 5px 15px floralwhite;
+    transform: scale(1.03);
+}
+.introCard:hover {
+    transition: transform 300ms;
+    box-shadow: 0 5px 15px #0ff;
+}
+.card-header {
+    background-image: linear-gradient(to bottom right, red, orange);
+    color: floralwhite;
+    font-weight: bold;
+    text-align: center;
+}
+.pokeCardElectric {
+    background-image: linear-gradient(to bottom right, yellow, darkorange);
+}
+.pokeCardElectric:hover {
+    box-shadow: 0 5px 15px orange;
+    transition: transform 300ms;
+    transform: scale(1.05);
+}
+.pokeCardGrass {
+    background-image: linear-gradient(to bottom right, lightgreen, darkgreen);
+}
+.pokeCardGrass:hover {
+    box-shadow: 0 5px 15px lightgreen;
+    transition: transform 300ms;
+    transform: scale(1.05);
+}
+.pokeCardFire {
+    background-image: linear-gradient(to bottom right, red, darkorange);
+}
+.pokeCardFire:hover {
+    box-shadow: 0 5px 15px darkred;
+    transition: transform 300ms;
+    transform: scale(1.05);
+}
+.pokeCardWater {
+    background-image: linear-gradient(to bottom right, purple, darkblue);
+}
+.pokeCardWater:hover {
+    box-shadow: 0 5px 15px #0ff;
+    transition: transform 300ms;
+    transform: scale(1.05);
+}
+.pokeImg {
+    width: 70px;
+    height: 70px;
+}
+@media (max-width: 992px) {
+    .pRight20 {
+        padding-right: 20px;
+    }
+    .pRight10 {
+        padding-right: 10px;
+    }
+}
+@media (min-width: 992px) {
+    .pokeImg {
+        width: 150px;
+        height: 150px;
+    }
+    #raichu {
+        width: 180px;
+        padding-left: 25px;
+    }
+    #venusaur {
+        width: 160px;
+    }
+    #chesnaught {
+        width: 160px;
+    }
+}
