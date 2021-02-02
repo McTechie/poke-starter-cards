@@ -4,14 +4,26 @@
   "description": "Pokemon Cards created using Bootstrap",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rimraf dist",
+    "imagemin": "imagemin assets/img/* -o dist/assets/img",
+    "usemin": "usemin index.html -d dist --htmlmin -o dist/index.html",
+    "build": "npm run clean && npm run imagemin && npm run usemin"
   },
   "author": "Mcvean Soans",
   "license": "ISC",
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.15.1",
     "bootstrap": "^4.5.2",
+    "copyfiles": "^2.4.1",
+    "imagemin-cli": "^6.0.0",
     "jquery": "^3.5.1",
     "popper.js": "^1.16.1"
+  },
+  "devDependencies": {
+    "cssmin": "^0.4.3",
+    "htmlmin": "0.0.7",
+    "rimraf": "^3.0.2",
+    "uglifyjs": "^2.4.11",
+    "usemin-cli": "^0.6.0"
   }
 }
